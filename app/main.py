@@ -23,7 +23,7 @@ async def lifespan(app: FastAPI):
     yield
     state.clear()
 
-app = FastAPI(title="ViT + LoRA (INT8) CIFAR-100 classifier", lifespan=lifespan)
+app = FastAPI(title="ViT LoRA CIFAR-100 classifier v1", lifespan=lifespan)
 
 @app.get("/health")
 def health():
