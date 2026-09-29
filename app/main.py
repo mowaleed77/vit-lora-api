@@ -30,7 +30,7 @@ def health():
     return {"status": "ok", "model_loaded": "model" in state}
 
 @app.post("/predict")
-async def predict(file: UploadFile = File(...), top_k: int = 5):
+async def predict(file: UploadFile = File(...), top_k: int = 3):
     try:
         img = Image.open(io.BytesIO(await file.read())).convert("RGB")
     except Exception:
