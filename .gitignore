@@ -4,3 +4,4 @@ model/merged_fp32/*.safetensors
 model/merged_fp32/*.pt
 __pycache__/
 *.pyc
+logs/

@@ -4,3 +4,6 @@ python-multipart
 pillow
 transformers
 numpy
+psutil
+prometheus-client
+scipy
